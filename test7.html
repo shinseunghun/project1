@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta content='text/html; charset=euc-kr'>
+<link rel="stylesheet" href="slider2.css">  <!-- 스타일시트 명시 --> 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+<title>디지털선행기술팀</title>
+</head>
+    
+    <script language="javascript">
+	function pushLayer(){
+		var $width=parseInt($("#lay_pop").css("width"));
+		var $height=parseInt($("#lay_pop").css("height"));
+		var left=($(window).width()-$width)/2;
+		var sctop=$(window).scrollTop()*2;
+		var top=($(window).height()-$height+sctop)/2;
+		var height=document.getElementsByTagName("body")[0].scrollHeight;
+		$("#lay_pop").css("left",left);
+		$("#lay_pop").css("top",top);
+		$("#lay_pop").css("display","block");
+		$("#lay_pop").css("z-index","555");
+		$("#all_body").css("display","block");
+		$("#all_body").css("width",$(window).width());
+		$("#all_body").css("height",height);
+
+	}
+	function layerClose(lay1,lay2){
+		$("#"+lay1).css("display","none");
+		$("#"+lay2).css("display","none");
+	}
+</script>
+
+    
+    <div id="lay_pop"><a href="javascript:;" onclick="layerClose('lay_pop','all_body')">닫기</a></div>
+<div id="all_body"></div>
+    
+<input type="button" value="레이어" onclick="pushLayer()">
+    
+    <header>
+    <div class="header">
+    <!-- 배너 -->    
+    <img src="back1.jpg" width="1040" height="140">
+    <!--<p>박스</p> -->
+    <center>
+    <div class="nav-1">
+        <ul class="nav-list-1">
+            <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">OUR TEAM</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">PROGRAM</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">STUDY</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">SITEMAP</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">LOGIN</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">MENU</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">MENU</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">MENU</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">MENU</a></li>
+            <li class="nav-item"><a href="test3.html" class="nav-link">WEBZINE</a></li>
+    </ul>
+    </div>
+    </center>    
+    </header>
+    </div>
+
+
+<body>     
+<!--<p>슬라이드쇼</p> -->
+<div id="slider-wrap">
+    <ul id="slider">
+        <li>
+            <div>
+                <h1>IoT</h1>
+                <span>사물인터넷</span>
+            </div>
+            <img src="./banner1.png">
+        </li>
+
+        <li>
+            <div>
+                <h1>Automotive 4.0</h1>
+                <span>스마트카의 미래</span>
+            </div>
+            <img src="./banner2.png">
+        </li>
+
+        <li>
+            <div>
+                <h1>IoT Control</h1>
+                <span>무선 센서와 통신</span>
+            </div>
+            <img src="./banner3.png">
+        </li>
+
+        <li>
+            <div>
+                <h1>IoT</h1>
+                <span>사물인터넷</span>
+            </div>
+            <img src="./banner1.png">
+        </li>
+
+        <li>
+            <div>
+                <h1>Automotive 4.0</h1>
+                <span>스마트카의 미래</span>
+            </div>
+            <img src="./banner2.png">
+        </li>
+    </ul>
+
+    <div class="slider-btns" id="next"><span>▶</span></div>
+    <div class="slider-btns" id="previous"><span>◀</span></div>
+
+    <div id="slider-pagination-wrap">
+        <ul>
+        </ul>
+    </div>
+</div>
+    <script type="text/javascript" src="slider2.js"></script>  <!-- 사용할 자바스크립트 -->
+<!--<p>슬라이드쇼 마침</p> --> 
+
+    
+<!-- 
+<img id ="image1" src="webzine.jpg" width="150" height="230">
+<img id ="image2" src="webzine.jpg" width="150" height="230">
+<img id ="image3" src="webzine.jpg" width="150" height="230"> 
+-->
+<div class="main_board">
+   
+</div>
+    
+<div class="main_board2">
+    <div class="tables">
+           <div class="row">
+            <div class="left">
+                <h4>no.</h4>
+            </div>
+ 
+            <div class="middle">
+                <h4>제목</h4>
+            </div>
+             <div class="right">
+                <h4>작성자</h4>
+            </div>
+            <div class="right">
+                <h4>조회수</h4>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="left">
+                <h4>1</h4>
+            </div>
+ 
+            <div class="middle">
+                <h4>2018_11월_신기술 웹진 1호 게시물 </h4>
+            </div> 
+            <div class="right">
+                <h4>신승훈 과장</h4>
+            </div>
+            <div class="right">
+                <h4>123</h4>
+            </div>
+        </div>
+            <div class="row">
+            <div class="left">
+                <h4>2</h4>
+            </div>
+ 
+            <div class="middle">
+                <h4>2018_12월_신기술 웹진 2호 게시물</h4>
+            </div> 
+            <div class="right">
+                <h4>신승훈 과장</h4>
+            </div>
+            <div class="right">
+                <h4>1123</h4>
+            </div>
+        </div>
+            <div class="row">
+            <div class="left">
+                <h4>3</h4>
+            </div>
+ 
+            <div class="middle">
+                <h4>2019_1월_신기술 웹진 3호 게시물</h4>
+            </div> 
+            <div class="right">
+                <h4>신승훈 과장</h4>
+            </div>
+            <div class="right">
+                <h4>50 </h4>
+            </div>
+        </div>
+            <div class="row">
+            <div class="left">
+                <h4>4</h4>
+            </div>
+ 
+            <div class="middle">
+                <h4>2019_2월_신기술 웹진 4호 게시물</h4>
+            </div> 
+            <div class="right">
+                <h4>신승훈 과장</h4>
+            </div>
+            <div class="right">
+                <h4>130</h4>
+            </div>
+        </div>
+    </div>
+        
+<div class="bx">
+    <img src="wordcloud.jpg" width="280" height="260">
+</div>
+    
+<div class="cx">
+    <img src="counter.png" width="280" height="260">
+    
+</div>
+    <img src="sub_banner.png" class="dx">    
+</div>    
+
+<div class="main_board3">
+     <div class="nav-3">
+            <ul class="nav-list-3">
+            <li class="nav-item-3"><a href="" class="nav-link-3">오늘의 신기술</a></li>
+            <li class="nav-item-3"><a href="" class="nav-link-3">신기술 웹진</a></li>
+            <li class="nav-item-3"><a href="" class="nav-link-3">신기술 뉴스</a></li>
+            </ul>
+        </div>              
+    <figure>
+    <a href="ytcb&b.pdf"><img src ="/webzine.jpg" height="200", width="130"></a>
+        <figcaption>신기술 웹진 1호</figcaption>
+    </figure>
+        
+    <figure>
+    <a href="ytcb&b.pdf"><img src ="/webzine.jpg" height="200", width="130"></a>
+        <figcaption>신기술 웹진 2호</figcaption>
+    </figure>
+        
+    <figure>
+    <a href="ytcb&b.pdf"><img src ="/webzine.jpg" height="200", width="130"></a>
+        <figcaption>신기술 웹진 3호</figcaption>
+    </figure>
+        
+     <figure>
+    <a href="ytcb&b.pdf"><img src ="/webzine.jpg" height="200", width="130"></a>
+        <figcaption>신기술 웹진 4호</figcaption>
+    </figure>
+    
+</div>
+
+<div class="main_board4">
+    <div class="content-img">  
+    <h2 class="av-specail-heading-tag">디지털선행기술팀의 새로운 소식을 받아볼수 있어요.</h2>
+    <p class="p_tag"> 성함과 이메일을 남겨주시면 웹세미나의 새로운 소식과 이벤트 정보를 드립니다.</p>
+    </div>
+    <div class="content-img-cover"></div>    
+</div>  
+</body>
+
+<footer>
+<div class="container">
+<div class="footer">
+    <p class="copyright">&copy; copyright 디지털선행기술팀 All Rights Reserved.<br>
+    주소 : 서울시 서초구 헌릉로 12 현대자동차 동관 14층</p>
+    <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=200, height=200'); return false;"><img src="icon_1.gif" title="밴드로 공유하기" class="sharebtn_custom" style="width: 32px;"></a>
+    <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=200, height=200'); return false;"><img src="icon_2.gif" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 32px;"></a>
+    <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=200, height=200'); return false;"><img src="icon_3.gif" title="카카오스토리로 공유하기" class="sharebtn_custom" style="width: 32px;"></a>
+    <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=200, height=200'); return false;"><img src="icon_4.gif" title="네이버로 공유하기" class="sharebtn_custom" style="width: 32px;"></a>
+    <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=200, height=200'); return false;"><img src="icon_5.gif" title="트위터로 공유하기" class="sharebtn_custom" style="width: 32px;"></a>
+    
+    
+    </div>
+    </div>
+</footer>
+
+</html>
